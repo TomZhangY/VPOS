@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="VPOS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Ticket"/>
+      </xs:sequence>
+      <xs:attribute name="Discription" use="required"/>
+      <xs:attribute name="ResponseCode" use="required" type="xs:string"/>
+      <xs:attribute name="POSTxnNo" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Ticket">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="LoyaltyInfo"/>
+        <xs:element ref="Items"/>
+        <xs:element ref="Tenders"/>
+      </xs:sequence>
+      <xs:attribute name="Action" use="required" type="xs:string"/>
+      <xs:attribute name="Description" use="required" type="xs:string"/>
+      <xs:attribute name="DiscountAmount" use="required" type="xs:string"/>
+      <xs:attribute name="NetTotalAmount" use="required" type="xs:string"/>
+      <xs:attribute name="TotalAmount" use="required" type="xs:string"/>
+      <xs:attribute name="TxnNo" use="required" type="xs:string"/>
+      <xs:attribute name="TxnTime" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoyaltyInfo">
+    <xs:complexType>
+      <xs:attribute name="CustomerName" use="required" type="xs:string"/>
+      <xs:attribute name="LoyaltyNumber" use="required" type="xs:string"/>
+      <xs:attribute name="OriginalPoint" use="required" type="xs:string"/>
+      <xs:attribute name="EarnedPoint" use="required" type="xs:string"/>
+      <xs:attribute name="BalancePoint" use="required" type="xs:string"/>
+      <xs:attribute name="OriginalStamp" use="required" type="xs:string"/>
+      <xs:attribute name="EarnedStamp" use="required" type="xs:string"/>
+      <xs:attribute name="BalanceStamp" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Items">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Item"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Item">
+    <xs:complexType>
+      <xs:attribute name="Amount" use="required" type="xs:string"/>
+      <xs:attribute name="Barcode" use="required" type="xs:string"/>
+      <xs:attribute name="Code" use="required" type="xs:string"/>
+      <xs:attribute name="Description" use="required" type="xs:string"/>
+      <xs:attribute name="NetAmount" use="required" type="xs:string"/>
+      <xs:attribute name="Price" use="required" type="xs:string"/>
+      <xs:attribute name="Quanlity" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tenders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="Tender"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Tender">
+    <xs:complexType>
+      <xs:attribute name="Amount" use="required" type="xs:string"/>
+      <xs:attribute name="Code" use="required" type="xs:string"/>
+      <xs:attribute name="Description" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

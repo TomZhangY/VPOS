@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jaxb:bindings xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
+请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+在重新编译源模式时, 对此文件的所有修改都将丢失。
+生成时间: 2017.12.21 时间 12:40:13 PM CST 
+
+  -->
+  <jaxb:bindings if-exists="true" scd="x-schema::">
+    <jaxb:schemaBindings map="false">
+      <jaxb:package name="org.tap.vpos.beans"/>
+    </jaxb:schemaBindings>
+    <jaxb:bindings if-exists="true" scd="VPOS">
+      <jaxb:class ref="org.tap.vpos.beans.VPOS"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="Ticket">
+      <jaxb:class ref="org.tap.vpos.beans.Ticket"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="LoyaltyInfo">
+      <jaxb:class ref="org.tap.vpos.beans.LoyaltyInfo"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="Items">
+      <jaxb:class ref="org.tap.vpos.beans.Items"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="Item">
+      <jaxb:class ref="org.tap.vpos.beans.Item"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="Tenders">
+      <jaxb:class ref="org.tap.vpos.beans.Tenders"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="Tender">
+      <jaxb:class ref="org.tap.vpos.beans.Tender"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>

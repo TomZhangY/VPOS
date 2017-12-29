@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VPOS>
+	<Ticket Action="Request" StoreID="02134" Description="Request" TxnNo="01201712120001" TxnTime="2016-11-29 20:49:01" TotalAmount="50.00" DiscountAmount="0" NetTotalAmount="50.00">
+	  <LoyaltyInfo LoyaltyNumber="991701100000499" CustomerName="FirstName LastName" OriginalPoint="6000"  EarnedPoint ="200"  BalancePoint="6200"  OriginalStamp="400"  EarnedStamp="100"  BalanceStamp="500">
+	  </LoyaltyInfo>
+	  <Items>
+        <Item Code="100646803" Barcode="" Price="12.00" Quanlity="2" Amount="24.00" NetAmount="22.00" Description="悠哈CORORO软糖52克("/>
+		<Item Code="100646804" Barcode="" Price="15.00" Quanlity="2" Amount="30.00" NetAmount="28.00" Description="软糖52克("/>        
+      </Items>
+      <Tenders>
+        <Tender Code="1" Amount="25.00" Description="支付宝在线"/>
+        <Tender Code="2" Amount="25.00" Description="微信在线"/>
+      </Tenders>
+	</Ticket>
+</VPOS>
